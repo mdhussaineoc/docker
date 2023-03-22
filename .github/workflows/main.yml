@@ -14,4 +14,4 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/docker-file
       - name: Docker Push
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-file
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-file:1.1
